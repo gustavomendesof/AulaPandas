@@ -4,5 +4,7 @@
 #Importanto biblioteca pandas no python
 import pandas as pd
 
-combustiveis_df = pd.read_csv("precos-semestrais-ca-2022-01")
+combustiveis_df = pd.read_excel("ca-2021-02.xlsx")
+
+
 
