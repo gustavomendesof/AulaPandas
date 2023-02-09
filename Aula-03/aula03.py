@@ -28,3 +28,18 @@ display(combustiveis_df.loc[(combustiveis_df['Bairro'] == 'MOOCA') &
 # Como mostrar média de valor de venda POR COMBUSTÍVEL Brasil todo?
 media_por_combustivel_df = ca_df[['Produto', 'Valor de Venda']].groupby(by='Produto').mean().round(2)
 display(media_por_combustivel_df)
+
+# Quero adicionar uam coluna de valorboolea no combustives_df chamada "Ativo"
+# que, por padrão, vai ser True para Todas as linhas
+# Todas as Linhas
+
+combustiveis_df['Ativo'] = True
+print(combustiveis_df.info())
+display(combustiveis_df.head())
+
+
+# E se eu quiser uma coluna nova chamada "Obs"
+# Que preencha automacticamente "Melhor cidade"
+# quando o Município for INDAIATUBA, SP...
+#combustiveis_df['Obs'] = "MELHOR CIDADE" if combustiveis_df['Municipio'] == "INDAIATUBA" else ""
+#amanhã a solução
