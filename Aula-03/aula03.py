@@ -43,3 +43,6 @@ display(combustiveis_df.head())
 # quando o Município for INDAIATUBA, SP...
 #combustiveis_df['Obs'] = "MELHOR CIDADE" if combustiveis_df['Municipio'] == "INDAIATUBA" else ""
 #amanhã a solução
+
+# Exportar para Excel o dataframe com etanol em indaiatuba...
+etanol_indaiatuba_df.to_excel('etanol_indaituba.xlsx', sheet_name='Etanol em Indaiatuba')
